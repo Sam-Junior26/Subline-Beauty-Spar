@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+    <section class="hero" id="hero">
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <h1>Subline Beauty Spa</h1>
+        <p>Treat • Relax • Rejuvenate</p>
+        <button>Book Appointment</button>
+    </section>
+
+    <section class="pricing"></section>
+
+    <section id="services">
+        <h1>Our Services</h1>
+        <div class="services">
+            <div class="card">Massage Therapy</div>
+            <div class="card">Facial Treatment</div>
+            <div class="card">Body Scrub</div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h1>Book a Session</h1>
+
+        <div class="booking">
+            <form class="booking-form">
+                <label>Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label>Cellphone Number</label>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone" required>
+
+                <label>Services</label>
+                <select id="service" required>
+                    <option value="">Select Services</option>
+                    <option>Massage Therapy</option>
+                    <option>Facial Treatment</option>
+                    <option>Body Scrub</option>
+                </select>
+
+                <label>Date</label>
+                <input type="date" id="date" required>
+
+                <label>Time</label>
+                <input type="time" id="time" required>
+
+                <button class="book" type="submit">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="about-us"></section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <div class="contact-container">
+            <div class="map-container">
+                <h2>Find Us</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3585.095190169244!2d27.989106874825858!3d-26.030441277184057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9576992dd3935d%3A0xa50f65c30abb681b!2s74%20Glenluce%20Dr%2C%20Douglasdale%2C%20Sandton%2C%202191!5e0!3m2!1sen!2sza!4v1777324811925!5m2!1sen!2sza" width="100%" height="400" style="border:0;"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+
+                <div class="info-item">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="info-text">
+                        <strong>Cellphone</strong>
+                        <span>073 212 1290</span>
+                    </div>
+                </div>
+    
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div class="info-text">
+                        <strong>Email</strong>
+                        <span>sublimebeauty@gmail.com</span>
+                    </div>
+                </div>
+    
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="info-text">
+                        <strong>Location</strong>
+                        <span>Fourways, Dougllasdale, 74 Glenluce Drive</span>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            const nav = document.querySelector(".nav-bar");
+            nav.classList.toggle("scrolled", window.scrollY > 50);
+        });
+</script>
+</body>
+</html>
