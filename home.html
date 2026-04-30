@@ -17,8 +17,8 @@
                     <li><a href="">Pricing</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#booking">Booking</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -36,6 +36,10 @@
             <div class="card">Massage Therapy</div>
             <div class="card">Facial Treatment</div>
             <div class="card">Body Scrub</div>
+            <div class="card">Body Wrap</div>
+            <div class="card">Infrared Sauna</div>
+            <div class="card">Sauna</div>
+            <div class="card">Spa Treatments</div>
         </div>
     </section>
 
@@ -51,7 +55,7 @@
                 <input type="email" id="email" placeholder="Enter your email" required>
 
                 <label>Phone Number</label>
-                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone" placeholder="Enter your phone number here" required>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone" placeholder="Enter your phone number" required>
 
                 <label>Services</label>
                 <select id="service" required>
@@ -59,6 +63,10 @@
                     <option>Massage Therapy</option>
                     <option>Facial Treatment</option>
                     <option>Body Scrub</option>
+                    <option>Body Wrap</option>
+                    <option>Infrared Sauna</option>
+                    <option>Sauna</option>
+                    <option>Spa Treatments</option>
                 </select>
 
                 <label>Date</label>
@@ -72,7 +80,41 @@
         </div>
     </section>
 
-    <section id="about-us"></section>
+    <section id="about-us">
+        <h1>About Us</h1>
+        <div class="opening-times">
+            <h2>Opening Times</h2>
+        
+            <div class="time-row">
+                <span>Monday</span>
+                <span>8:00am - 5:00pm</span>
+            </div>
+            <div class="time-row">
+                <span>Tuesday</span>
+                <span>8:00am - 5:00pm</span>
+            </div>
+            <div class="time-row">
+                <span>Wednesday</span>
+                <span>8:00am - 5:00pm</span>
+            </div>
+            <div class="time-row">
+                <span>Thursday</span>
+                <span>8:00am - 5:00pm</span>
+            </div>
+            <div class="time-row">
+                <span>Friday</span>
+                <span>8:00am - 5:00pm</span>
+            </div>
+            <div class="time-row">
+                <span>Saturday</span>
+                <span>8:00am - 5:00pm</span>
+            </div>
+            <div class="time-row">
+                <span>Sunday</span>
+                <span>8:00am - 5:00pm</span>
+            </div>
+        </div>
+    </section>
 
     <section id="contact">
         <h1>Contact</h1>
@@ -110,6 +152,12 @@
                         <span>Fourways, Dougllasdale, 74 Glenluce Drive</span>
                     </div>
                 </div>
+
+                <div class="icons">
+                    <a href="https://www.facebook.com/Sublime Beauty Spa" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@sublimebeautyspa" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/sublime_beautyspa/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
         </div>
     </section>
 
@@ -118,6 +166,10 @@
             const nav = document.querySelector(".nav-bar");
             nav.classList.toggle("scrolled", window.scrollY > 50);
         });
-</script>
+    </script>
+
+    <footer class="footer">
+        <p>&copy; 2026 Sublime Beauty Spa. All rights reserved.</p>
+    </footer>
 </body>
 </html>

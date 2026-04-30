@@ -153,6 +153,17 @@ button.book {
     cursor: pointer;
 }
 
+.opening-times {
+    max-width: 400px;
+}
+
+.time-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
 .contact-container {
   max-width: 1200px;
   margin: auto;
@@ -214,4 +225,23 @@ h2 {
 
 .info-text span {
   font-size: 16px;
+}
+
+.icons {
+    margin-top: 25px;
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    color: #23B2DA;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.icons a {
+    color: inherit;
+    transition: 0.3s;
+}
+
+.icons a:hover {
+    color: #0C8ADC;
 }
