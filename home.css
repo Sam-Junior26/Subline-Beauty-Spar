@@ -113,7 +113,7 @@ section {
 .card {
     background: white;
     padding: 20px;
-    width: 200px;
+    width: 400px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -228,20 +228,35 @@ h2 {
 }
 
 .icons {
-    margin-top: 25px;
+    margin-top: 0;        /* remove extra spacing so it aligns properly */
     display: flex;
-    gap: 30px;
+    gap: 20px;
     font-size: 20px;
-    color: #23B2DA;
     align-items: center;
-    margin-left: 15px;
 }
 
-.icons a {
-    color: inherit;
-    transition: 0.3s;
+/* Brand colors */
+.icons a:nth-child(1) i { color: #1877F2; } /* Facebook */
+.icons a:nth-child(2) i { color: #000000; } /* TikTok */
+.icons a:nth-child(3) i { color: #E4405F; } /* Instagram */
+
+/* Optional hover effect */
+.icons a:hover i {
+    opacity: 0.7;
 }
 
-.icons a:hover {
-    color: #0C8ADC;
+.opening-times{
+    background: whitesmoke;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: larger;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;           
+  padding: 15px 30px;
 }
